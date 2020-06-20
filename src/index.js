@@ -4,13 +4,7 @@ const { uuid, isUuid } = require('uuidv4');
 const app = express();
 app.use(express.json());
 
-const projects = [
-  {
-    id: '5b58b904-ac14-4104-8978-79190ab16001',
-    title: 'aplicativo React Nativa',
-    owner: 'paty',
-  },
-];
+const projects = [];
 
 function logRequests(request, response, next) {
   const { method, url } = request;
